@@ -1,0 +1,6 @@
+com\example\statementgenerator\controller\StatementRequestController.class
+com\example\statementgenerator\model\StatementEntity.class
+com\example\statementgenerator\client\CoreBankingSystemClient.class
+com\example\statementgenerator\repository\StatementRepository.class
+com\example\statementgenerator\service\StatementService.class
+com\example\statementgenerator\StatementGeneratorApplication.class
