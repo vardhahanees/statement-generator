@@ -1,7 +1,7 @@
 # statement-generator
 
 ## Description
-The **Statement Generator API** provides a service for asynchronously generating account statements by integrating with a mocked Core Banking system. Users can request their account statements by specifying the account number, start date, and end date. The system will notify them once the statement is ready with a download link.
+The **Statement Generator** provides a service for asynchronously generating account statements by integrating with a mocked Core Banking system. Users can request their account statements by specifying the account number, start date, and end date. The system will notify them once the statement is ready with a download link.
 
 ## Technologies Used
 - **Spring Boot**: Framework for building the API.
@@ -22,16 +22,9 @@ The **Statement Generator API** provides a service for asynchronously generating
     "toDate": "2024-12-31"        // End date for the statement
   }
 
-### 2. **Download Statement**
-- **Endpoint**:
-   /api/v1/statements/download/{id}
-- **Method**: GET
-- **Path Variable**:
-      id: The ID of the statement to download.
-
 **Responses:**
 
-- 200 OK: Returns the statement PDF file.
+- 202 Accepted
 - 500 Internal Server Error
    
 ## **Setup Instructions**
@@ -80,8 +73,6 @@ curl -X POST http://localhost:8080/api/v1/statements \
   "toDate": "2024-12-31"
 }'
 
-## Downloading a Statement
-curl -X GET http://localhost:8080/api/v1/statements/download/1
 
 
 
