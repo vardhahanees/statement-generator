@@ -11,7 +11,7 @@ The **Statement Generator** provides a service for asynchronously generating acc
 
 ## API Endpoints
 
-### 1. **Request Statement**
+### **Request Statement**
 - **Endpoint**: `/api/v1/statements`
 - **Method**: `POST`
 - **Request Body**:
